@@ -78,3 +78,23 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.blog-post {
+  margin-bottom: 20px;
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+
+    a {
+      color: $indigo;
+    }
+  }
+  .author {
+    font-weight: bold;
+    color: $teal;
+  }
+  .date {
+    font-style: italic;
+    color: $jet;
+  }
+}

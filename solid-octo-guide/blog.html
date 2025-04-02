@@ -11,9 +11,7 @@ title: Blog
         <span class="date"> | Published on {{ post.date | date: "%B %d, %Y" }}</span>
     </div>
     <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
-    {% if post.excerpt | strip_html | size > 100 %}
     <a href="{{ site.baseurl }}/{{ post.url }}">Read more</a>
-    {% endif %}
 </div>
 {% unless forloop.last %}
 <hr>

@@ -1,14 +1,17 @@
 /* Global Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;400;700&display=swap');
+
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
-  --font-family: 'Arial, sans-serif';
+  --font-family: 'Roboto Flex', sans-serif;
 }
 
 body {
   font-family: var(--font-family);
-  color: var(--secondary-color);
+  color: black;
+  background-color: white;
 }
 
 .site-header {

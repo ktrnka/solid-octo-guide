@@ -1,16 +1,14 @@
 module.exports = {
-    content: [
-      './_drafts/**/*.html',
-      './_includes/**/*.html',
-      './_layouts/**/*.html',
-      './_posts/*.md',
-      './*.md',
-      './*.html',
-    ],
-    theme: {
-      theme: {
-        extend: {},
-      },
-    },
-    plugins: []
-  }
+  content: [
+    "./_drafts/**/*.md",
+    "./_includes/**/*.html",
+    "./_layouts/**/*.html",
+    "./_pages/*.{html,md}",
+    "./_posts/*.md",
+    "./*.{html,md}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: []
+}

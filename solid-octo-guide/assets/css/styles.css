@@ -1,0 +1,123 @@
+/* assets/css/styles.css */
+---
+# This yaml frontmatter is required for jekyll to process the file
+---
+
+@import "tailwindcss";
+
+/* .btn {
+  @apply rounded border border-gray-300;
+} */
+
+:root {
+  --platinum: #d9d9d9;
+  --jet: #353535;
+  --teal: #3c6e71;
+  --white: #ffffff;
+  --indigo: #284b63;
+  --black: #000000;
+  --primary-text: var(--white);
+  --primary-highlight-text: var(--white);
+  --primary-subdued-text: var(--platinum);
+  --primary-color-text: var(--teal);
+  --inverted-text: var(--jet);
+  --primary-background: var(--black);
+  --primary-secondary-background: var(--jet);
+  --inverted-background: var(--platinum);
+  --inverted-secondary-background: var(--white);
+  --font-family: 'Roboto Flex', sans-serif;
+}
+/* Base palette */
+/* $jet: #353535;
+$teal: #3c6e71;
+$white: #ffffff;
+--platinum: #d9d9d9;
+$indigo: #284b63;
+$black: #000000; */
+
+/* Logical colors */
+/* $primary-text: $white;
+$primary-highlight-text: $white;
+$primary-subdued-text: $platinum;
+$primary-color-text: $teal;
+$inverted-text: $jet;
+
+$primary-background: $black;
+$primary-secondary-background: $jet;
+
+$inverted-background: $platinum;
+$inverted-secondary-background: $white;
+
+/* Fonts */
+/* $font-family: 'Roboto Flex', sans-serif; */ */
+
+body {
+  font-family: var(--font-family);
+  color: white;
+  background-color: black;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.site-header {
+  color: white;
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-title {  
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .site-nav {
+    a {
+      margin-left: 15px;
+    }
+
+    .current {
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+    }
+  }
+}
+
+.site-footer {
+  color: white;
+  background-color: black;
+
+  padding: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-subdued-text);
+
+  &:hover {
+    color: var(--primary-text);
+    text-decoration: underline;
+  }
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+
+  }
+  .author {
+    font-weight: thin;
+  }
+  .date {
+    font-weight: thin;
+  }
+}

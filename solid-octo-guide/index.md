@@ -1,6 +1,20 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Welcome to Octo
+title: "Octo"
+tagline: "Food rules"
 ---
+
+<section id="use-cases">
+  <h2>Use Cases</h2>
+  <ul>
+    <li>Eating ice cream</li>
+    <li>Pizza</li>
+    <li>Talking</li>
+  </ul>
+</section>
+
+<section id="customers">
+  <h2>Our Customers</h2>
+  <p>Placeholder for a small current customers banner</p>
+</section>

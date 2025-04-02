@@ -38,3 +38,6 @@ gem "kramdown-parser-gfm"
 
 # Not included in this Ruby version by default
 gem 'webrick'
+
+# For Tailwind CSS
+gem 'jekyll-postcss'

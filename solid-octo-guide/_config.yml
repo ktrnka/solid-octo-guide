@@ -11,6 +11,12 @@ markdown: kramdown
 # plugins:
 #   - jekyll-feed
 
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
 # Customization
 header_includes: "_includes/header.html"
 footer_includes: "_includes/footer.html"

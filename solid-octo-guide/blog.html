@@ -4,7 +4,7 @@ title: Blog
 ---
 
 {% for post in site.posts %}
-    <p class="blog-post">
+<div class="blog-post">
     <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
     <div>
         <span class="author">By {{ post.author }}</span>
@@ -12,10 +12,10 @@ title: Blog
     </div>
     <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
     {% if post.excerpt | strip_html | size > 100 %}
-        <a href="{{ site.baseurl }}/{{ post.url }}">Read more</a>
+    <a href="{{ site.baseurl }}/{{ post.url }}">Read more</a>
     {% endif %}
-    </p>
-    {% unless forloop.last %}
-        <hr>
-    {% endunless %}
+</div>
+{% unless forloop.last %}
+<hr>
+{% endunless %}
 {% endfor %}

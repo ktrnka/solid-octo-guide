@@ -4,3 +4,4 @@ _site/
 vendor/
 Gemfile.lock
 node_modules/
+.jekyll-cache/

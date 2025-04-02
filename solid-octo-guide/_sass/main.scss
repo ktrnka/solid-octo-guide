@@ -17,8 +17,8 @@ $primary-subdued-text: $platinum;
 $primary-color-text: $teal;
 $inverted-text: $jet;
 
-$primary-background: $jet;
-$primary-secondary-background: $black;
+$primary-background: $black;
+$primary-secondary-background: $jet;
 
 $inverted-background: $platinum;
 $inverted-secondary-background: $white;
@@ -73,7 +73,6 @@ main {
 
 a {
   text-decoration: none;
-  color: $primary-color-text;
 }
 
 a:hover {

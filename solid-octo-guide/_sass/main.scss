@@ -73,10 +73,10 @@ main {
 
 a {
   text-decoration: none;
-  color: $primary-color-text;
+  color: $primary-subdued-text;
 
   &:hover {
-    color: $primary-subdued-text;
+    color: $primary-text;
     text-decoration: underline;
   }
 }

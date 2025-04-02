@@ -25,6 +25,11 @@ body {
   font-family: $font-family;
   color: $primary-text;
   background-color: $primary-background;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
 }
 
 .site-header {

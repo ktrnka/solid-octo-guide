@@ -1,13 +1,20 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
-  </head>
-  <body>
+</head>
+
+<body>
     {% include header.html %}
-    {{ content }}
+
+    <main>
+        {{ content }}
+    </main>
+
     {% include footer.html %}
-  </body>
+</body>
+
 </html>

@@ -85,9 +85,6 @@ a:hover {
     font-size: 1.5em;
     margin-bottom: 5px;
 
-    a {
-      color: $indigo;
-    }
   }
   .author {
     font-weight: thin;
@@ -96,5 +93,8 @@ a:hover {
   .date {
     font-weight: thin;
     color: $jet;
+  }
+  a {
+    color: $indigo;
   }
 }

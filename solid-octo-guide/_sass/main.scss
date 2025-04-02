@@ -2,62 +2,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;400;700&display=swap');
 
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --font-family: 'Roboto Flex', sans-serif;
-}
+/* Base palette */
+$jet: #353535;
+$teal: #3c6e71;
+$white: #ffffff;
+$platinum: #d9d9d9;
+$indigo: #284b63;
+
+/* Logical colors */
+$primary-text: $jet;
+$inverted-text: $white;
+
+$primary-background: $white;
+$primary-secondary-background: $platinum;
+$inverted-background: $jet;
+$inverted-secondary-background: $indigo;
+
+/* Fonts */
+$font-family: 'Roboto Flex', sans-serif;
 
 body {
-  font-family: var(--font-family);
-  color: black;
-  background-color: white;
+  font-family: $font-family;
+  color: $primary-text;
+  background-color: $primary-background;
 }
 
 .site-header {
-  background-color: #333;
-  color: #fff;
+  background-color: $inverted-secondary-background;
+  color: $inverted-text;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.site-header .site-title {  
-  font-size: 1.5em;
-  font-weight: bold;
-}
+  .site-title {  
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .site-nav {
+    a {
+      color: #fff;
+      margin-left: 15px;
+    }
 
-.site-header .site-nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
-}
-
-.site-nav .current {
-  font-weight: bold;
-  text-decoration: none;
-  cursor: default;
-}
-
-.site-nav a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
+    .current {
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+    }
+  }
 }
 
 .site-footer {
-  background-color: #333;
-  color: #fff;
+  background-color: $inverted-background;
+  color: $inverted-text;
   padding: 15px;
   font-size: 0.9em;
   text-align: center;
+
+  a {
+    color: $inverted-text;
+  }
 }
 
-.site-footer a {
-  color: #fff;
+a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

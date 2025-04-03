@@ -1,23 +1,24 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}" data-theme="dark">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
     <title>{{site.title}}: {{ page.title }}</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/pico.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
 </head>
 
-<body class="flex flex-col min-h-screen text-white bg-gray-900">
+<body>
     {% include header.html %}
 
-    <main class="grow">
+    <main class="container">
         {{ content }}
     </main>
 

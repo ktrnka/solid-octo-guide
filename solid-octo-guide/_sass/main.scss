@@ -1,0 +1,53 @@
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--pico-muted-border-color);
+  padding: 15px;
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  background: var(--pico-muted-border-color);
+  margin-top: auto;
+  padding: 15px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+// a {
+//   text-decoration: none;
+//   color: $jet;
+
+//   &:hover {
+//     color: black;
+//     text-decoration: underline;
+//   }
+// }
+
+// .blog-post {
+//   margin-bottom: 20px;
+//   h2 {
+//     font-size: 1.5em;
+//     margin-bottom: 5px;
+
+//   }
+//   .author {
+//     font-weight: thin;
+//   }
+//   .date {
+//     font-weight: thin;
+//   }
+// }

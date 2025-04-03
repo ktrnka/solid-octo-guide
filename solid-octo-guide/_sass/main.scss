@@ -31,26 +31,6 @@ $inverted-text: $jet;
 .site-header {
   background: $platinum;
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .site-title {  
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .site-nav {
-    a {
-      margin-left: 15px;
-    }
-
-    .current {
-      font-weight: bold;
-      text-decoration: none;
-      cursor: default;
-    }
-  }
 }
 
 .site-footer {

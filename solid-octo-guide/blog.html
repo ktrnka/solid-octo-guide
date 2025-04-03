@@ -4,7 +4,7 @@ title: Blog
 ---
 
 {% for post in site.posts %}
-<div class="blog-post">
+<section>
     <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
     <div>
         <span class="author">By {{ post.author }}</span>
@@ -12,8 +12,5 @@ title: Blog
     </div>
     <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
     <a href="{{ site.baseurl }}/{{ post.url }}">Read more</a>
-</div>
-{% unless forloop.last %}
-<hr>
-{% endunless %}
+</section>
 {% endfor %}

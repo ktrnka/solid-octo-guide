@@ -1,3 +1,13 @@
+/*
+Notes:
+- Use Pico CSS color variables, and then edit the variables so that they're applied consistently across the site.
+*/
+
+// Override some colors
+:root {
+  --pico-primary: #86cbed;
+  --pico-primary-hover: #b0d1e2;
+}
 
 body {
   min-height: 100vh;
@@ -27,27 +37,11 @@ footer {
   text-align: center;
 }
 
-// a {
-//   text-decoration: none;
-//   color: $jet;
+section {
+  padding: 30px;
+  border-radius: 10px;
+}
 
-//   &:hover {
-//     color: black;
-//     text-decoration: underline;
-//   }
-// }
-
-// .blog-post {
-//   margin-bottom: 20px;
-//   h2 {
-//     font-size: 1.5em;
-//     margin-bottom: 5px;
-
-//   }
-//   .author {
-//     font-weight: thin;
-//   }
-//   .date {
-//     font-weight: thin;
-//   }
-// }
+section:nth-of-type(even) {
+  background: var(--pico-muted-border-color);
+}

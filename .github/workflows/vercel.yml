@@ -29,29 +29,24 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
 
-      - name: Deploy to Vercel Action
-        uses: BetaHuhn/deploy-to-vercel-action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          node-version: '18'
+      
+      - run: npm install -g vercel@latest
+
+      - name: Pull Vercel config
+        run: vercel pull --yes --environment production --token ${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./solid-octo-guide
+        env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          CREATE_COMMENT: false
-          WORKING_DIRECTORY: ./solid-octo-guide
-  
 
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: '18'
-      
-      # - run: npm install -g vercel@latest
-
-      # - name: Pull Vercel config
-      #   run: vercel pull --yes --environment production --token ${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }} --org ${{ secrets.VERCEL_ORG_ID }}
-      #   working-directory: ./solid-octo-guide
-
-      # - name: Build and deploy to Vercel
-      #   run: vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }} --project ${{ secrets.VERCEL_PROJECT_ID }} --org ${{ secrets.VERCEL_ORG_ID }}
-      #   working-directory: ./solid-octo-guide
+      - name: Build and deploy to Vercel
+        run: vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./solid-octo-guide
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 

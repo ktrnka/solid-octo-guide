@@ -5,3 +5,4 @@ vendor/
 Gemfile.lock
 node_modules/
 .jekyll-cache/
+.vercel

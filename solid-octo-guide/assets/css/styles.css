@@ -3,8 +3,10 @@ Notes:
 - Use Pico CSS color variables, and then edit the variables so that they're applied consistently across the site.
 */
 
+/*
 // Override some colors
 // TODO: These colors only make sense in dark mode
+*/
 :root {
   --pico-primary: #86cbed;
   --pico-primary-hover: #b0d1e2;
